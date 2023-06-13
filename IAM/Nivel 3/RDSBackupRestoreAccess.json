@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "rds:CreateDBSnapshot",
+        "rds:RestoreDBInstanceFromDBSnapshot"
+      ],
+      "Resource": "arn:aws:rds:YOUR_REGION:YOUR_ACCOUNT_ID:db:YOUR_DB_INSTANCE_NAME"
+    },
+    {
+      "Effect": "Deny",
+      "Action": [
+        "rds:ModifyDBInstance"
+      ],
+      "Resource": "arn:aws:rds:YOUR_REGION:YOUR_ACCOUNT_ID:db:YOUR_DB_INSTANCE_NAME"
+    }
+  ]
+}

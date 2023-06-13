@@ -1,0 +1,13 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "codecommit:GitPull",
+        "codecommit:GitPush"
+      ],
+      "Resource": "arn:aws:codecommit:YOUR_REGION:YOUR_ACCOUNT_ID:YOUR_REPOSITORY_NAME"
+    }
+  ]
+}
